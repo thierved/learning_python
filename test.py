@@ -1,7 +1,3 @@
-file = open('./data', 'a')
-res = ''
+import builtins
 
-while res != '0' :
-    res = input('what is your name: ')
-    if res != '0': file.write(res + '\n')
-file.close()
+print(dir(builtins))

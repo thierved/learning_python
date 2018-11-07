@@ -3,3 +3,5 @@ def sayHi():
 
 def greet():
     print('good morning!!')
+
+num = 3
