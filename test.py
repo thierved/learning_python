@@ -1,18 +1,16 @@
+def product(x):
+    def add(y):
+        return x * y
+    
+    return add
 
-def func():
-    global x, y
-    x = 1
-    y = x + 1
-    z = y * x
+multiply_by = product(3)
+quadriples = product(4)
 
-    def non():
-        nonlocal z
-        z += 1
-
-    non()
-
-    print(z)
-
-func()
-
-print(x, y)
+print(multiply_by(3))
+print(multiply_by(4))
+print(multiply_by(10))
+print()
+print(quadriples(2))
+print(quadriples(4))
+print(quadriples(10))
