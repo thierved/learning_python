@@ -1,16 +1,20 @@
-def product(x):
-    def add(y):
-        return x * y
-    
-    return add
+x = 10
+L = [0, 1]
 
-multiply_by = product(3)
-quadriples = product(4)
+def func(a, S):
+    S[0] = 'he'    
+    a = 4
 
-print(multiply_by(3))
-print(multiply_by(4))
-print(multiply_by(10))
-print()
-print(quadriples(2))
-print(quadriples(4))
-print(quadriples(10))
+func(x, L)
+
+print(x, L)
+## args
+
+def func1(*val):
+    for x in val:
+        print(x)
+
+def func2(**val):
+    print(val)
+
+func2(x=1, y='h0', z=0)
